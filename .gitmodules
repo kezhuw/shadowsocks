@@ -1,0 +1,9 @@
+[submodule "github.com/Sirupsen/logrus"]
+	path = vendor/github.com/Sirupsen/logrus
+	url = https://github.com/Sirupsen/logrus.git
+[submodule "github.com/kezhuw/toml"]
+	path = vendor/github.com/kezhuw/toml
+	url = https://github.com/kezhuw/toml.git
+[submodule "github.com/naoina/go-stringutil"]
+	path = vendor/github.com/naoina/go-stringutil.git
+	url = https://github.com/naoina/go-stringutil.git

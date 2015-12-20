@@ -1,0 +1,28 @@
+# configuration for user1
+[[roles]]
+name = "user1"
+password = "user1-password"
+encryption = "aes-256-cfb"
+
+[[servers]]
+role = "user1"
+listen = { net = "ip4", port = "2345" }
+
+[[locals]]
+listen = { addr = "localhost:1080" }
+remote = { net = "ip4", host = "aa.bb.cc.dd", port = 2345, role = "user1" }
+
+
+# configuration for group1
+[[roles]]
+name = "group1"
+password = "group1-password"
+encryption = "aes-256-cfb"
+
+[[servers]]
+role = "group1"
+listen = { port = "5678" }
+
+[[locals]]
+listen = { net = "ip6", port = 1080 }
+remote = { net = "ip4", host = "ee.ff.gg.hh", port = 5678, role = "group1" }
