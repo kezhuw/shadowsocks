@@ -21,6 +21,7 @@ Various cipher methods and UDP are not supported. For now, only supported cipher
 -   rc4-md5
 
 ## Usage
+Run `go get github.com/kezhuw/shadowsocks/cmd/shadowsocks` to install command line executable file.
 ```
 Usage of shadowsocks:
   -config string
