@@ -79,9 +79,10 @@ func handleConnection(conn net.Conn, options *config.Server) {
 	err = tunnel.Copy(dstConn, localStream)
 	if err != nil {
 		log.Warnf("server[%s] local[%s] dst[%s] connection aborted: %s", serverAddr, localAddr, dstAddr, err)
-	} else {
-		log.Infof("server[%s] local[%s] dst[%s] connection closed", serverAddr, localAddr, dstAddr)
+		return
 	}
+
+	log.Infof("server[%s] local[%s] dst[%s] connection closed", serverAddr, localAddr, dstAddr)
 }
 
 func readAddress(r io.Reader) (*netaddr.Address, error) {

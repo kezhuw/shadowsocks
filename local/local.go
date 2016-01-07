@@ -104,9 +104,10 @@ func handleConnection(clientConn net.Conn, options *config.Local) {
 	err = tunnel.Copy(remoteStream, clientConn)
 	if err != nil {
 		log.Warnf("local[%s] client[%s] remote[%s] connection aborted: %s", localAddr, clientAddr, remoteAddr, err)
-	} else {
-		log.Infof("local[%s] client[%s] remote[%s] connection closed", localAddr, clientAddr, remoteAddr)
+		return
 	}
+
+	log.Infof("local[%s] client[%s] remote[%s] connection closed", localAddr, clientAddr, remoteAddr)
 }
 
 func handleHandshake(rw io.ReadWriter) error {
