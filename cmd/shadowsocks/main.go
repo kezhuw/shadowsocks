@@ -2,10 +2,11 @@ package main
 
 import (
 	"flag"
+	"io/ioutil"
+
 	log "github.com/Sirupsen/logrus"
 	"github.com/kezhuw/shadowsocks"
 	"github.com/kezhuw/shadowsocks/config"
-	"io/ioutil"
 )
 
 var configFile string

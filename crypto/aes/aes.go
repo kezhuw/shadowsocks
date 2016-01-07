@@ -4,6 +4,7 @@ package aes
 import (
 	"crypto/aes"
 	"crypto/cipher"
+
 	"github.com/kezhuw/shadowsocks/crypto"
 )
 

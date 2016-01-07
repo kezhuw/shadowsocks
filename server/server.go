@@ -3,6 +3,10 @@
 package server
 
 import (
+	"io"
+	"net"
+	"sync"
+
 	log "github.com/Sirupsen/logrus"
 	"github.com/kezhuw/shadowsocks/config"
 	"github.com/kezhuw/shadowsocks/crypto"
@@ -10,9 +14,6 @@ import (
 	"github.com/kezhuw/shadowsocks/netaddr"
 	"github.com/kezhuw/shadowsocks/socks5"
 	"github.com/kezhuw/shadowsocks/tunnel"
-	"io"
-	"net"
-	"sync"
 )
 
 // Serve listens on servers, accepting and serving incoming connection.

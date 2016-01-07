@@ -1,11 +1,12 @@
 package shadowsocks
 
 import (
+	"sync"
+
 	log "github.com/Sirupsen/logrus"
 	"github.com/kezhuw/shadowsocks/config"
 	"github.com/kezhuw/shadowsocks/local"
 	"github.com/kezhuw/shadowsocks/server"
-	"sync"
 )
 
 func Serve(configs *config.Config) {

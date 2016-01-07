@@ -5,6 +5,7 @@ import (
 	"crypto/cipher"
 	"crypto/md5"
 	"crypto/rc4"
+
 	"github.com/kezhuw/shadowsocks/crypto"
 )
 

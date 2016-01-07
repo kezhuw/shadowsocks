@@ -4,6 +4,7 @@ package key
 
 import (
 	"crypto/md5"
+
 	"github.com/kezhuw/shadowsocks/crypto"
 )
 

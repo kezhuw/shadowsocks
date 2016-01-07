@@ -3,9 +3,10 @@ package config
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/kezhuw/shadowsocks/netaddr"
 	"github.com/kezhuw/toml"
-	"time"
 )
 
 // Remote specifies a remote endpoint and its encryption scheme.
