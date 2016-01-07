@@ -4,6 +4,3 @@
 [submodule "github.com/kezhuw/toml"]
 	path = vendor/github.com/kezhuw/toml
 	url = https://github.com/kezhuw/toml.git
-[submodule "github.com/naoina/go-stringutil"]
-	path = vendor/github.com/naoina/go-stringutil
-	url = https://github.com/naoina/go-stringutil.git
